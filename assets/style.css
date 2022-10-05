@@ -54,6 +54,10 @@ background: linear-gradient(90deg, rgba(249,246,246,1) 0%, rgba(173,144,28,1) 38
   /* padding-top:0px; */
 }
 
+h1{
+  
+}
+
 .btn{
 
   align-items: center;
@@ -84,7 +88,30 @@ background: linear-gradient(90deg, rgba(249,246,246,1) 0%, rgba(173,144,28,1) 38
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
+  animation: wiggle 2s linear infinite;
 }
+/* @keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
 
 .btn:focus {
   box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
@@ -100,14 +127,14 @@ background: linear-gradient(90deg, rgba(249,246,246,1) 0%, rgba(173,144,28,1) 38
 .btn:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
-}
+}*/
 
 
 .footer{
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,22,182,1) 35%, rgba(0,212,255,1) 100%); 
   text-decoration: none;
-  /* color: #fff; */
+  color: #fff;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -125,14 +152,8 @@ background: linear-gradient(90deg, rgba(249,246,246,1) 0%, rgba(173,144,28,1) 38
 }
 
 
-.about-card{
-  margin-top: 150px;
-  text-align: center;
-  tra
 
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap'); */
 /* body {
   background-color:  #151719;
   display: flex;
@@ -140,12 +161,12 @@ background: linear-gradient(90deg, rgba(249,246,246,1) 0%, rgba(173,144,28,1) 38
   align-items: center;
   min-height: 100vh;
 } */
-.waviy {
+/* .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-  font-size: 60px;
+  font-size: 60px; */
 }
-.waviy span {
+/* .waviy span {
   font-family: 'Alfa Slab One', cursive;
   position: relative;
   display: inline-block;
@@ -154,12 +175,82 @@ background: linear-gradient(90deg, rgba(249,246,246,1) 0%, rgba(173,144,28,1) 38
   animation: waviy 1s infinite;
   animation-delay: calc(.1s * var(--i));
   
-}
-@keyframes waviy {
+} */
+/* @keyframes waviy {
   0%,40%,100% {
     transform: translateY(0)
   }
   20% {
     transform: translateY(-20px)
   }
+} */ */
+
+
+.aboutcard{
+  margin-top: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+.about-message{
+  align-items: center;
+}
+
+
+.cv-body{
+  margin-top: 150px;
+  text-align: center;
+
+}
+.cv-body p{
+  font-size: larger;
+}
+
+#projectbar{
+  margin: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.contactbox{
+  margin-top: 150px;
+  justify-content: center;
+  text-align: center;
+  
+
+}
+
+.contactcard{
+  display: flex;
+  justify-content: center;
+}
+
+.contacttext{
+  align-self: center;
+  padding-left: 50px;
+  text-decoration: none;
+  color: black;
+
+}
+.contacttext a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.skillset{
+  justify-content: center;
+  margin-top: 150px;
+  /* display: flex; */
+  text-align: center;
+}
+.skill-list{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
